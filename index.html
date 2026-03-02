@@ -13,68 +13,47 @@ font-family:Arial, sans-serif;
 }
 
 body{
-background:#111;
-color:white;
+height:100vh;
+background:url('god.jpg') no-repeat center center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
 }
 
-header{
-background:linear-gradient(90deg,#ff512f,#dd2476);
-padding:30px;
+.overlay{
+background:rgba(0,0,0,0.65);
+padding:40px;
+border-radius:20px;
+color:white;
+width:90%;
+max-width:600px;
 }
 
-header h1{
+h1{
 font-size:32px;
-}
-
-header p{
-font-size:20px;
-margin-top:10px;
+margin-bottom:20px;
+background:linear-gradient(90deg,#FFD700,#ff0000);
+-webkit-background-clip:text;
+color:transparent;
 }
 
 .phone{
 font-size:24px;
-font-weight:bold;
-margin-top:10px;
 color:yellow;
-}
-
-.section{
-padding:40px 20px;
-}
-
-.section h2{
-margin-bottom:20px;
-font-size:28px;
-color:#00ffff;
-}
-
-.image-box{
-width:100%;
-max-width:800px;
-margin:20px auto;
-}
-
-.image-box img{
-width:100%;
-border-radius:15px;
-box-shadow:0 0 20px black;
-}
-
-footer{
-background:#222;
-padding:20px;
-margin-top:30px;
+font-weight:bold;
+margin-top:15px;
 }
 
 button{
+margin-top:20px;
 padding:12px 25px;
 font-size:18px;
 border:none;
 border-radius:30px;
 background:#00c6ff;
 color:white;
-margin-top:15px;
+cursor:pointer;
 }
 
 button:hover{
@@ -85,61 +64,18 @@ background:#ff512f;
 
 <body>
 
-<header>
+<div class="overlay">
 <h1>Sri Raja Rajeshwari Waterproof Works</h1>
-<p>All Types of Waterproofing Solutions</p>
-<div class="phone">Govindarao - 6303155579</div>
+
+<div class="phone">
+Govindarao - 6303155579
+</div>
+
 <a href="tel:6303155579">
 <button>Call Now</button>
 </a>
-</header>
 
-<div class="section">
-<h2>Roof Waterproofing</h2>
-<div class="image-box">
-<img src="roof.jpg">
 </div>
-</div>
-
-<div class="section">
-<h2>Terrace Waterproofing</h2>
-<div class="image-box">
-<img src="terrace.jpg">
-</div>
-</div>
-
-<div class="section">
-<h2>Bathroom Waterproofing</h2>
-<div class="image-box">
-<img src="bathroom.jpg">
-</div>
-</div>
-
-<div class="section">
-<h2>Basement Waterproofing</h2>
-<div class="image-box">
-<img src="basement.jpg">
-</div>
-</div>
-
-<div class="section">
-<h2>Water Tank Waterproofing</h2>
-<div class="image-box">
-<img src="watertank.jpg">
-</div>
-</div>
-
-<div class="section">
-<h2>Crack Filling & Injection Grouting</h2>
-<div class="image-box">
-<img src="crack.jpg">
-</div>
-</div>
-
-<footer>
-© 2026 Sri Raja Rajeshwari Waterproof Works  
-Quality | Trust | Professional Service
-</footer>
 
 </body>
-  </html>
+</html>
