@@ -1,115 +1,190 @@
-<div class="section">
-<h2>Our Recent Work</h2>
-
-<img src="work1.jpg" style="width:100%; margin-bottom:15px; border-radius:10px;">
-<img src="work2.jpg" style="width:100%; margin-bottom:15px; border-radius:10px;">
-<img src="work3.jpg" style="width:100%; border-radius:10px;">
-
-</div><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Sri Radhe Rajeswari Waterproofing Contractor</title>
+<title>Sri Raja Rajeswari Waterproofing Contractor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Roof Waterproofing in Duvvada, Terrace and Bathroom Leakage Repair in Visakhapatnam. Call 6303155579">
-
 <style>
+
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    color:white;
-    text-align:center;
+margin:0;
+font-family: Arial, sans-serif;
+background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c92d2);
+background-size:400% 400%;
+animation:gradientBG 10s ease infinite;
+color:white;
 }
 
-.background{
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:-1;
+@keyframes gradientBG{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
-.background img{
-    position:absolute;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0;
-    animation:slide 12s infinite;
+.header{
+background:url('storm.jpg') no-repeat center;
+background-size:cover;
+padding:70px 20px;
+text-align:center;
+animation:fadeIn 2s ease-in-out;
 }
 
-.background img:nth-child(1){animation-delay:0s;}
-.background img:nth-child(2){animation-delay:6s;}
-
-@keyframes slide{
-    0%{opacity:0;}
-    10%{opacity:1;}
-    40%{opacity:1;}
-    50%{opacity:0;}
-    100%{opacity:0;}
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(-20px);}
+to{opacity:1; transform:translateY(0);}
 }
 
-.overlay{
-    background:rgba(0,0,0,0.6);
-    min-height:100vh;
-    padding:20px;
+.header h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.buttons{
+margin-top:20px;
+}
+
+.call-btn{
+background:#007BFF;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+color:white;
+font-size:16px;
+margin:5px;
+box-shadow:0 0 10px #007BFF;
+transition:0.3s;
+}
+
+.call-btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 20px #00c3ff;
+}
+
+.whatsapp-btn{
+background:#25D366;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+color:white;
+font-size:16px;
+margin:5px;
+animation:bounce 2s infinite;
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-5px);}
 }
 
 .section{
-    background:white;
-    color:black;
-    margin:20px;
-    padding:20px;
-    border-radius:10px;
+background:white;
+color:black;
+margin:20px;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+animation:fadeUp 1.5s ease;
 }
 
-button{
-    background:#25D366;
-    color:white;
-    padding:12px 20px;
-    border:none;
-    border-radius:8px;
-    font-size:16px;
-    margin:10px;
+@keyframes fadeUp{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
 }
+
+.section h2{
+color:#1c92d2;
+}
+
+.highlight{
+background:linear-gradient(to right,#1c92d2,#00c6ff);
+color:white;
+padding:10px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.small-text{
+font-size:12px;
+color:#555;
+}
+
+.footer{
+text-align:center;
+padding:20px;
+background:#111;
+margin-top:20px;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="background">
-    <img src="bg1.jpg">
-    <img src="bg2.jpg">
-</div>
-
-<div class="overlay">
-
-<h1>Sri Radhe Rajeswari Waterproofing Contractor</h1>
-<p><b>Leakage Problem Permanent Solution</b></p>
+<div class="header">
+<h1>Sri Raja Rajeswari Waterproofing Contractor</h1>
+<p>Leakage Problem Permanent Solution</p>
 <p>Duvvada | Visakhapatnam</p>
 
-<button onclick="window.location.href='tel:6303155579'">📞 Call Now</button>
-<button onclick="window.location.href='https://wa.me/916303155579'">WhatsApp</button>
-
-<div class="section">
-<h2>Our Services</h2>
-<p>✔ Roof Waterproofing</p>
-<p>✔ Terrace Waterproofing</p>
-<p>✔ Bathroom Leakage Repair</p>
-<p>✔ Water Tank Waterproofing</p>
-<p>✔ Crack Filling Treatment</p>
-<p>✔ Injection Grouting</p>
+<div class="buttons">
+<button class="call-btn" onclick="window.location.href='tel:6303155579'">📞 Call Now</button>
+<button class="whatsapp-btn" onclick="window.location.href='https://wa.me/916303155579'">WhatsApp</button>
+</div>
 </div>
 
 <div class="section">
-<h2>Why Choose Us?</h2>
-<p>✔ Experienced Mason</p>
-<p>✔ Quality Materials</p>
-<p>✔ 5 Years Guarantee</p>
-<p>✔ Affordable Price</p>
+<h2>New Bathroom Waterproofing</h2>
+<div class="highlight">
+₹3300 – ₹3600 (Full Material & Chemicals)<br>
+₹2000 – ₹2200 (Labour Only)
+</div>
+<p>
+✔ Loose particle cleaning<br>
+✔ Pipe joint packing<br>
+✔ Corner haunch work<br>
+✔ 2 Chemical coatings up to 2 ft height<br>
+✔ Water testing<br>
+✔ Chemical mixed concrete<br>
+✔ Final top coating
+</p>
 </div>
 
+<div class="section">
+<h2>Old Bathroom Leakage Repair</h2>
+<p>
+✔ Tile joint cutting & Epoxy filling<br>
+✔ Double / Triple component Epoxy treatment<br>
+✔ Injection grouting if heavy damage
+</p>
+</div>
+
+<div class="section">
+<h2>Terrace / Slab Leakage</h2>
+<div class="highlight">
+₹40 – ₹100 per sq.ft (Condition Based)
+</div>
+<p>
+✔ Suitable waterproof coating<br>
+✔ Elastomeric / Acrylic coating<br>
+✔ Mesh if required<br>
+✔ Crack filling compulsory<br>
+✔ Injection grouting if needed
+</p>
+</div>
+
+<div class="section">
+<h2>Warranty & Conditions</h2>
+<p class="small-text">
+Warranty depends on surface condition and maintenance.
+Structural cracks and external damages not covered.
+Water stagnation must be avoided.
+Warranty valid only after full payment completion.
+</p>
+</div>
+
+<div class="footer">
+💯 Trusted Quality Work is Our Goal<br>
+Sri Raja Rajeswari Waterproof Works<br>
+🙏 Goddu Govindarao 🙏
 </div>
 
 </body>
