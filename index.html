@@ -9,10 +9,10 @@
 body{
 margin:0;
 font-family:Arial;
-background:#f2f2f2;
+background:#f4f4f4;
 }
 
-/* Top Menu */
+/* MENU */
 
 .menu{
 background:#111;
@@ -27,19 +27,19 @@ margin:15px;
 font-size:18px;
 }
 
-/* Hero Section */
+/* HERO */
 
 .hero{
-background:url("background.jpg");
+background-image:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e");
 background-size:cover;
 background-position:center;
-padding:100px 20px;
+padding:120px 20px;
 text-align:center;
 color:white;
 }
 
 .hero h1{
-font-size:35px;
+font-size:36px;
 }
 
 .btn{
@@ -60,18 +60,18 @@ background:#007bff;
 background:#25d366;
 }
 
-/* Service Boxes */
+/* SERVICES */
 
 .container{
-padding:20px;
 max-width:900px;
 margin:auto;
+padding:20px;
 }
 
 .box{
 background:white;
-padding:25px;
 margin:25px 0;
+padding:25px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
@@ -88,11 +88,20 @@ border-radius:10px;
 margin:10px 0;
 }
 
-ul{
-line-height:28px;
+/* WORK PHOTOS */
+
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
 }
 
-/* Footer */
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* FOOTER */
 
 .footer{
 background:#111;
@@ -110,6 +119,7 @@ margin-top:40px;
 <div class="menu">
 <a href="#">Home</a>
 <a href="#">Services</a>
+<a href="#">Photos</a>
 <a href="#">Contact</a>
 </div>
 
@@ -181,12 +191,28 @@ margin-top:40px;
 
 </div>
 
+
+<div class="box">
+
+<h2>Our Work Photos</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1581093458791-9d42c3d5f5c1">
+<img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+<img src="https://images.unsplash.com/photo-1597002893371-ffb9f1f3c7ab">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+
+</div>
+
+</div>
+
 </div>
 
 <div class="footer">
 
-Sri Raja Rajeswari Waterproof Works  
-Duvvada | Visakhapatnam  
+Sri Raja Rajeswari Waterproof Works<br>
+Duvvada | Visakhapatnam<br>
 Call: 6303155579
 
 </div>
