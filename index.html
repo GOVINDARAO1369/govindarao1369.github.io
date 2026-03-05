@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sri Raja Rajeswari Waterproof Works | Duvvada</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Raja Rajeswari Waterproof Works</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
-font-family: Arial, sans-serif;
-background: url('Screenshot_20260303-140959.jpg') no-repeat center center fixed;
-background-size: cover;
-color:white;
-  }
-
-@keyframes gradientBG{
-0%{background-position:0% 50%;}
-50%{background-position:100% 50%;}
-100%{background-position:0% 50%;}
+font-family:Arial;
+background:#f2f2f2;
 }
 
-.header{
-background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('background.jpg');
-background-size:cover;
-background-position:center;
-padding:90px 20px;
+/* Top Menu */
+
+.menu{
+background:#111;
+padding:15px;
 text-align:center;
 }
 
-.header h1{
-font-size:28px;
-margin-bottom:10px;
+.menu a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
 }
 
-.buttons{
-margin-top:20px;
+/* Hero Section */
+
+.hero{
+background:url("background.jpg");
+background-size:cover;
+background-position:center;
+padding:100px 20px;
+text-align:center;
+color:white;
 }
 
-.call-btn{
-background:#007BFF;
+.hero h1{
+font-size:35px;
+}
+
+.btn{
+display:inline-block;
 padding:12px 25px;
-border:none;
+margin:10px;
 border-radius:30px;
 color:white;
-font-size:16px;
-margin:5px;
+text-decoration:none;
+font-size:18px;
 }
 
-.whatsapp-btn{
-background:#25D366;
-padding:12px 25px;
-border:none;
-border-radius:30px;
-color:white;
-font-size:16px;
-margin:5px;
+.call{
+background:#007bff;
 }
 
-.section{
-background:white;
-color:black;
-margin:20px;
+.whatsapp{
+background:#25d366;
+}
+
+/* Service Boxes */
+
+.container{
 padding:20px;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.4);
+max-width:900px;
+margin:auto;
 }
 
-.section h2{
+.box{
+background:white;
+padding:25px;
+margin:25px 0;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.box h2{
 color:#1c92d2;
 }
 
-.highlight{
-background:linear-gradient(to right,#1c92d2,#00c6ff);
+.price{
+background:#1c92d2;
 color:white;
 padding:10px;
 border-radius:10px;
-margin-bottom:10px;
+margin:10px 0;
 }
 
-.small-text{
-font-size:12px;
-color:#555;
+ul{
+line-height:28px;
 }
+
+/* Footer */
 
 .footer{
+background:#111;
+color:white;
 text-align:center;
 padding:20px;
-background:#111;
-margin-top:20px;
+margin-top:40px;
 }
 
 </style>
@@ -95,71 +107,88 @@ margin-top:20px;
 
 <body>
 
-<div class="header">
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+
+<div class="hero">
+
 <h1>Sri Raja Rajeswari Waterproof Works</h1>
+
 <p>Leakage Problem Permanent Solution</p>
 <p>Duvvada | Visakhapatnam</p>
 
-<div class="buttons">
-<button class="call-btn" onclick="window.location.href='tel:6303155579'">📞 Call Now</button>
-<button class="whatsapp-btn" onclick="window.location.href='https://wa.me/916303155579'">WhatsApp</button>
-</div>
+<a class="btn call" href="tel:6303155579">Call Now</a>
+
+<a class="btn whatsapp" href="https://wa.me/916303155579">WhatsApp</a>
+
 </div>
 
-<div class="section">
+
+<div class="container">
+
+<div class="box">
+
 <h2>New Bathroom Waterproofing</h2>
-<div class="highlight">
-₹3300 – ₹3600 (Full Labour & Chemicals)<br>
+
+<div class="price">
+₹3300 – ₹3600 (Full Material & Chemicals)<br>
 ₹2000 – ₹2200 (Labour Only)
 </div>
-<p>
-✔ Loose particle cleaning<br>
-✔ Pipe joint packing<br>
-✔ Corner haunch work<br>
-✔ 2 Chemical coatings up to 2 ft height<br>
-✔ Water testing<br>
-✔ Chemical mixed concrete<br>
-✔ Final top coating
-</p>
+
+<ul>
+<li>Loose particle cleaning</li>
+<li>Pipe joint packing</li>
+<li>Corner haunch work</li>
+<li>2 chemical coatings up to 2 ft height</li>
+<li>Water testing</li>
+<li>Chemical mixed concrete</li>
+<li>Final top coating</li>
+</ul>
+
 </div>
 
-<div class="section">
+
+<div class="box">
+
 <h2>Old Bathroom Leakage Repair</h2>
-<p>
-✔ Tile joint cutting & Epoxy filling<br>
-✔ Double / Triple component Epoxy treatment<br>
-✔ Injection grouting if heavy damage
-</p>
+
+<ul>
+<li>Tile joint cutting & epoxy filling</li>
+<li>Double / Triple epoxy treatment</li>
+<li>Injection grouting for heavy leakage</li>
+</ul>
+
 </div>
 
-<div class="section">
+
+<div class="box">
+
 <h2>Terrace / Slab Leakage</h2>
-<div class="highlight">
+
+<div class="price">
 ₹40 – ₹100 per sq.ft (Condition Based)
 </div>
-<p>
-✔ Suitable waterproof coating<br>
-✔ Elastomeric / Acrylic coating<br>
-✔ Mesh if required<br>
-✔ Crack filling compulsory<br>
-✔ Injection grouting if needed
-</p>
+
+<ul>
+<li>Surface cleaning</li>
+<li>Elastomeric waterproof coating</li>
+<li>Acrylic waterproof coating</li>
+<li>Injection grouting if needed</li>
+</ul>
+
 </div>
 
-<div class="section">
-<h2>Warranty & Conditions</h2>
-<p class="small-text">
-Warranty depends on surface condition and maintenance.
-Structural cracks and external damages not covered.
-Water stagnation must be avoided.
-Warranty valid only after full payment completion.
-</p>
 </div>
 
 <div class="footer">
-💯 Trusted Quality Work is Our Goal<br>
-Sri Raja Rajeswari Waterproof Works<br>
-🙏 Goddu Govindarao 🙏
+
+Sri Raja Rajeswari Waterproof Works  
+Duvvada | Visakhapatnam  
+Call: 6303155579
+
 </div>
 
 </body>
