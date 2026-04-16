@@ -8,33 +8,30 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+    background: #eef6f9;
 }
 
-/* HEADER */
 header {
-    background: linear-gradient(45deg,#0a2540,#0077b6);
+    background: linear-gradient(45deg,#023e8a,#0077b6);
     color: white;
     text-align: center;
-    padding: 30px 15px;
+    padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
+.logo img {
+    width: 100px;
 }
 
-/* BUTTONS */
 .buttons {
     text-align: center;
     margin: 15px;
 }
 
 .btn {
-    padding: 12px 20px;
+    padding: 12px 18px;
     margin: 5px;
-    border-radius: 30px;
+    border-radius: 8px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -43,66 +40,28 @@ header h1 {
 .call { background:#0077b6; }
 .whatsapp { background:#25D366; }
 
-/* SERVICE BOX */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
-    gap: 10px;
+.container {
     padding: 15px;
 }
 
-.service-box {
-    background: white;
-    padding: 12px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    border-top: 3px solid red;
-    font-size: 13px;
-}
-
-/* CARD */
 .card {
     background: white;
-    margin: 15px;
     padding: 15px;
-    border-radius: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-h2 {
-    color:#0077b6;
-}
+h2 { color:#0077b6; }
 
-/* GALLERY */
 .gallery img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
-/* FLOAT BUTTON */
-.float-btn {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-}
-
-.float-btn a {
-    display: block;
-    margin: 8px 0;
-    padding: 12px;
-    border-radius: 50%;
-    color: white;
-    text-align: center;
-}
-
-.call-float { background: red; }
-.whatsapp-float { background: green; }
-
-/* FOOTER */
 footer {
-    background:#0a2540;
+    background:#023e8a;
     color:white;
     text-align:center;
     padding:10px;
@@ -114,8 +73,11 @@ footer {
 <body>
 
 <header>
-<h1>🏗 SRI RAJARAJESWARI WATERPROOF WORK</h1>
-<p>Bathroom | Terrace | Tank Leakage Solutions</p>
+<div class="logo">
+<img src="logo.png" alt="logo">
+</div>
+<h2>SRI RAJARAJESWARI WATERPROOFING WORK</h2>
+<p>Trusted Waterproof Experts</p>
 </header>
 
 <div class="buttons">
@@ -123,49 +85,36 @@ footer {
 <a href="https://wa.me/916303155579" class="btn whatsapp">💬 WhatsApp</a>
 </div>
 
-<!-- SERVICES -->
-<div class="services">
-<div class="service-box">Bathroom Waterproofing</div>
-<div class="service-box">Terrace Leakage Repair</div>
-<div class="service-box">Roof Leakage Work</div>
-<div class="service-box">Water Tank Leakage</div>
-<div class="service-box">Epoxy Grouting</div>
-<div class="service-box">Injection Grouting</div>
-</div>
+<div class="container">
 
-<!-- DETAILS -->
 <div class="card">
-<h2>🔧 Work Details</h2>
+<h2>🔧 Our Services</h2>
 <ul>
-<li>Bathroom leakage full repair</li>
-<li>Tile joint cutting & chemical filling</li>
-<li>Waterproof coating (2 layers)</li>
-<li>Water testing after work</li>
-<li>Slab & terrace crack repair</li>
+<li>Bathroom Leakage Repair</li>
+<li>Terrace Waterproofing</li>
+<li>Water Tank Repair</li>
+<li>Tile Joint Filling</li>
+<li>Slab Crack Repair</li>
+<li>All Cement Works</li>
 </ul>
 </div>
 
-<!-- GALLERY -->
 <div class="card">
 <h2>🖼 Our Work</h2>
 <div class="gallery">
 <img src="work1.jpg">
 <img src="work2.jpg">
 <img src="work3.jpg">
+<img src="work4.jpg">
 </div>
 </div>
 
-<!-- MAP -->
 <div class="card">
 <h2>📍 Location</h2>
 <iframe src="https://maps.google.com/maps?q=duvvada%20visakhapatnam&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%" height="250"></iframe>
 </div>
 
-<!-- FLOAT BUTTON -->
-<div class="float-btn">
-<a href="tel:6303155579" class="call-float">📞</a>
-<a href="https://wa.me/916303155579" class="whatsapp-float">💬</a>
 </div>
 
 <footer>
@@ -174,4 +123,4 @@ width="100%" height="250"></iframe>
 </footer>
 
 </body>
- </html>
+    </html>
