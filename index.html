@@ -3,151 +3,324 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>శ్రీ రాజరాజేశ్వరి బిల్డింగ్ కన్స్ట్రక్షన్ & వాటర్ ప్రూఫింగ్</title>
+<meta name="description" content="శ్రీ రాజరాజేశ్వరి వాటర్ ప్రూఫ్ వర్క్ - విశాఖపట్నంలో స్లాబ్, టెర్రస్, బాత్రూమ్, వాటర్ ట్యాంక్ వాటర్‌ప్రూఫింగ్ సేవలు.">
+<meta name="theme-color" content="#071b4d">
+<title>శ్రీ రాజరాజేశ్వరి వాటర్ ప్రూఫ్ వర్క్ | Visakhapatnam</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+:root{
+  --navy:#06133f;
+  --blue:#0879ff;
+  --cyan:#00d9ff;
+  --sky:#eaf8ff;
+  --yellow:#ffd21f;
+  --orange:#ff7a00;
+  --red:#ff304f;
+  --green:#00b96b;
+  --white:#fff;
+  --ink:#102044;
+  --muted:#60708e;
+  --shadow:0 18px 55px rgba(4,22,70,.18);
+  --radius:28px;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
+  margin:0;font-family:"Noto Sans Telugu",Arial,sans-serif;color:var(--ink);
+  background:linear-gradient(180deg,#f6fcff 0%,#fff 40%,#eef8ff 100%);
 }
-
-header{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:20px;
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{
+  background:#03102f;color:#fff;font-size:14px;padding:8px 0;
 }
-
-header img{
-width:150px;
-border-radius:10px;
+.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.nav{
+  position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(14px);border-bottom:1px solid #dce9f7;
 }
-
-section{
-padding:20px;
+.navin{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy)}
+.logo{
+  width:48px;height:48px;border-radius:15px;display:grid;place-items:center;
+  color:#fff;font-size:25px;background:linear-gradient(135deg,#007cff,#00d9ff 55%,#ffd21f);
+  box-shadow:0 8px 22px rgba(0,121,255,.3)
 }
-
-h2{
-color:#0d47a1;
+.brand span{font-size:18px;line-height:1.15}
+.menu{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.menu a{padding:9px 12px;border-radius:12px;font-weight:700;color:#253454;font-size:14px}
+.menu a:hover{background:#eaf5ff;color:#0066e8}
+.cta{
+  background:linear-gradient(135deg,#00b96b,#00d9a0);color:#fff!important;
+  box-shadow:0 8px 20px rgba(0,185,107,.25)
 }
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
+.hero{
+  min-height:650px;position:relative;overflow:hidden;color:#fff;
+  background:
+   radial-gradient(circle at 85% 15%,rgba(0,217,255,.55),transparent 28%),
+   radial-gradient(circle at 12% 70%,rgba(255,210,31,.22),transparent 30%),
+   linear-gradient(135deg,#03113d 0%,#073d91 48%,#0089c9 100%);
 }
+.hero:before{
+  content:"";position:absolute;inset:0;opacity:.28;
+  background-image:linear-gradient(120deg,transparent 45%,rgba(255,255,255,.25) 46%,transparent 48%);
+  background-size:75px 75px;animation:rain 1.2s linear infinite;
+}
+@keyframes rain{to{background-position:75px 75px}}
+.hero .container{position:relative;z-index:2;padding:76px 0 95px}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.3);
+  font-weight:700
+}
+.hero h1{font-size:clamp(34px,6vw,70px);line-height:1.08;margin:20px 0 14px;max-width:850px}
+.hero h1 .yellow{color:#ffe02f;text-shadow:0 3px 0 rgba(0,0,0,.15)}
+.hero p{font-size:clamp(17px,2.5vw,22px);line-height:1.8;max-width:750px;color:#e7f8ff}
+.heroBtns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;
+  border-radius:15px;font-weight:800;border:0;cursor:pointer
+}
+.btn-yellow{background:var(--yellow);color:#17234a;box-shadow:0 10px 25px rgba(255,210,31,.25)}
+.btn-outline{border:1px solid rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.1)}
+.heroStats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:720px;margin-top:48px
+}
+.stat{padding:17px;border-radius:20px;background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.18)}
+.stat b{display:block;font-size:25px;color:#ffe02f}.stat span{font-size:13px;color:#dff7ff}
 
+.wave{height:80px;background:linear-gradient(180deg,transparent 0 30%,#fff 31%);clip-path:ellipse(75% 65% at 50% 100%);margin-top:-40px;position:relative;z-index:3}
+.section{padding:85px 0}
+.section.alt{background:#f3fbff}
+.kicker{color:#0075ef;font-weight:800;letter-spacing:.5px}
+.title{font-size:clamp(28px,4vw,44px);margin:8px 0 12px;color:var(--navy)}
+.lead{color:var(--muted);max-width:760px;line-height:1.8}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}
 .card{
-background:white;
-padding:15px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+  background:#fff;border:1px solid #dfeefa;border-radius:var(--radius);padding:24px;
+  box-shadow:var(--shadow);transition:.25s;position:relative;overflow:hidden
 }
+.card:hover{transform:translateY(-7px);box-shadow:0 25px 65px rgba(4,22,70,.2)}
+.card:after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;right:-30px;top:-30px;background:rgba(0,217,255,.09)}
+.icon{font-size:40px;margin-bottom:13px}
+.card h3{margin:0 0 8px;color:var(--navy)}
+.card p{margin:0;color:var(--muted);line-height:1.7;font-size:14px}
+.ribbon{
+  margin:45px 0 0;padding:28px;border-radius:30px;color:#fff;
+  background:linear-gradient(120deg,#ff304f,#ff7a00,#ffd21f);box-shadow:var(--shadow)
+}
+.ribbon strong{font-size:24px}.ribbon p{margin:6px 0 0;line-height:1.7}
 
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:15px;
-}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:35px}
+.step{padding:22px;border-radius:24px;background:linear-gradient(145deg,#fff,#edf8ff);border:1px solid #d8ecfb}
+.num{width:42px;height:42px;border-radius:13px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:800;margin-bottom:14px}
 
-.gallery img{
-width:100%;
-border-radius:10px;
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:15px;margin-top:35px}
+.photo{
+  min-height:220px;border-radius:25px;overflow:hidden;position:relative;
+  display:flex;align-items:end;padding:22px;color:#fff;font-weight:800;
+  background:
+    linear-gradient(180deg,transparent 35%,rgba(0,0,0,.72)),
+    linear-gradient(135deg,#0a8dff,#00d9ff 45%,#071b4d);
 }
+.photo.big{min-height:455px;background:
+    linear-gradient(180deg,transparent 35%,rgba(0,0,0,.72)),
+    radial-gradient(circle at 70% 30%,#65eaff 0 5%,transparent 6%),
+    linear-gradient(135deg,#062060,#0a91db,#13c7a3)}
+.photo:nth-child(2){background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.7)),linear-gradient(135deg,#ff7a00,#ffd21f,#ff304f)}
+.photo:nth-child(3){background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.7)),linear-gradient(135deg,#00b96b,#00d9a0,#0879ff)}
+
+.aboutBox{display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:stretch}
+.aboutMain{
+  padding:36px;border-radius:32px;background:linear-gradient(135deg,#06133f,#0a5bc7);color:#fff;box-shadow:var(--shadow)
+}
+.aboutMain h3{font-size:30px;margin-top:0}.aboutMain p{line-height:1.9;color:#e4f3ff}
+.checks{display:grid;gap:12px;margin-top:20px}.check{display:flex;gap:10px;align-items:flex-start}.check b{color:#ffe02f}
+.aboutSide{display:grid;gap:15px}
+.mini{padding:24px;border-radius:25px;background:#fff;border:1px solid #dcecf8;box-shadow:var(--shadow)}
+.mini strong{font-size:27px;color:var(--navy);display:block}
 
 .contact{
-text-align:center;
-padding:20px;
+  padding:75px 0;color:#fff;background:
+  radial-gradient(circle at 80% 20%,rgba(0,217,255,.35),transparent 28%),
+  linear-gradient(135deg,#03102f,#073d91)
 }
+.contactGrid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.contactCard{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:28px;border-radius:30px}
+.contactCard h3{font-size:29px;margin-top:0}.contactCard p{color:#dceeff;line-height:1.8}
+.phone{font-size:clamp(30px,5vw,48px);font-weight:800;color:#ffe02f;display:block;margin:18px 0}
+.actionRow{display:flex;gap:12px;flex-wrap:wrap}
+.whatsapp{background:#16c784;color:#fff}.call{background:#ffd21f;color:#142044}
 
-.btn{
-display:inline-block;
-padding:12px 25px;
-margin:10px;
-background:#0d47a1;
-color:white;
-text-decoration:none;
-border-radius:5px;
+footer{background:#020b25;color:#b8cae5;padding:24px 0;text-align:center;font-size:13px}
+.float{
+  position:fixed;right:17px;bottom:18px;z-index:1100;width:60px;height:60px;border-radius:50%;
+  display:grid;place-items:center;background:#16c784;color:#fff;font-size:29px;
+  box-shadow:0 12px 30px rgba(0,0,0,.25);animation:pulse 2s infinite
 }
+@keyframes pulse{50%{transform:scale(1.06)}}
 
-.whatsapp{
-background:green;
+@media(max-width:900px){
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .process{grid-template-columns:repeat(2,1fr)}
+  .aboutBox,.contactGrid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}.photo.big{grid-column:1/-1}
+  .menu{display:none}
 }
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:15px;
+@media(max-width:560px){
+  .hero .container{padding:55px 0 75px}
+  .heroStats{grid-template-columns:1fr}
+  .grid4,.process,.gallery{grid-template-columns:1fr}
+  .photo.big{grid-column:auto;min-height:300px}
+  .section{padding:65px 0}
+  .brand span{font-size:15px}
 }
 </style>
 </head>
 
 <body>
+<div class="topbar">
+  <div class="container">
+    <span>📍 విశాఖపట్నం & పరిసర ప్రాంతాలు</span>
+    <span>📞 7382466632 &nbsp; | &nbsp; 💬 WhatsApp అందుబాటులో ఉంది</span>
+  </div>
+</div>
 
-<header>
-<h1>శ్రీ రాజరాజేశ్వరి</h1>
-<h2>బిల్డింగ్ కన్స్ట్రక్షన్ & వాటర్ ప్రూఫింగ్ వర్క్స్</h2>
-<p>టెర్రస్ | బాత్రూమ్ | వాటర్ ట్యాంక్ వాటర్ ప్రూఫింగ్</p>
+<nav class="nav">
+  <div class="container navin">
+    <a href="#home" class="brand">
+      <div class="logo">💧</div>
+      <span>శ్రీ రాజరాజేశ్వరి<br>వాటర్ ప్రూఫ్ వర్క్</span>
+    </a>
+    <div class="menu">
+      <a href="#home">హోమ్</a>
+      <a href="#services">సేవలు</a>
+      <a href="#process">పని విధానం</a>
+      <a href="#about">మా గురించి</a>
+      <a href="#contact" class="cta">సంప్రదించండి</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <span class="badge">🌧️ వర్షాలు కురుస్తున్నాయా? మీ స్లాబ్‌ను కాపాడుకోండి!</span>
+    <h1>లీకేజీకి <span class="yellow">చెక్</span>...<br>మీ ఇంటికి <span class="yellow">రక్షణ</span>!</h1>
+    <p>స్లాబ్, టెర్రస్, బాత్రూమ్, వాటర్ ట్యాంక్ మరియు గోడల లీకేజీలకు నాణ్యమైన వాటర్‌ప్రూఫింగ్ పరిష్కారాలు.</p>
+    <div class="heroBtns">
+      <a class="btn btn-yellow" href="tel:7382466632">📞 ఇప్పుడే కాల్ చేయండి</a>
+      <a class="btn btn-outline" href="https://wa.me/917382466632?text=నాకు%20వాటర్‌ప్రూఫింగ్%20పని%20కావాలి" target="_blank">💬 WhatsAppలో అడగండి</a>
+    </div>
+    <div class="heroStats">
+      <div class="stat"><b>🏠 4+</b><span>ప్రధాన వాటర్‌ప్రూఫింగ్ సేవలు</span></div>
+      <div class="stat"><b>🛠️ నాణ్యత</b><span>పని మీద శ్రద్ధ & ఫినిషింగ్</span></div>
+      <div class="stat"><b>📍 విశాఖ</b><span>స్థానిక సేవలకు సంప్రదించండి</span></div>
+    </div>
+  </div>
 </header>
 
-<section>
-<h2>మా సేవలు</h2>
+<div class="wave"></div>
 
-<div class="services">
+<section class="section" id="services">
+  <div class="container">
+    <div class="kicker">OUR SERVICES</div>
+    <h2 class="title">మీ ఇంటికి కావాల్సిన వాటర్‌ప్రూఫింగ్ సేవలు</h2>
+    <p class="lead">లీకేజీ కనిపించిన తర్వాత మాత్రమే కాకుండా, ముందుగానే స్లాబ్‌కు రక్షణ కల్పించడం ద్వారా మీ ఇంటిని వర్షాల నుంచి కాపాడుకోండి.</p>
 
-<div class="card">
-<h3>టెర్రస్ వాటర్ ప్రూఫింగ్</h3>
-<p>లీకేజీ సమస్యలకు శాశ్వత పరిష్కారం.</p>
-</div>
+    <div class="grid4">
+      <article class="card"><div class="icon">🏠</div><h3>స్లాబ్ వాటర్‌ప్రూఫింగ్</h3><p>టెర్రస్ మరియు RCC స్లాబ్‌లలో నీరు చొరబడకుండా రక్షణ పూత.</p></article>
+      <article class="card"><div class="icon">🌧️</div><h3>టెర్రస్ లీకేజీ</h3><p>వర్షపు నీటి లీకేజీలు, నిల్వ నీరు మరియు తేమ సమస్యలకు పరిష్కారం.</p></article>
+      <article class="card"><div class="icon">🚿</div><h3>బాత్రూమ్ సీలింగ్</h3><p>బాత్రూమ్ నుంచి కిందకు నీరు చేరే సమస్యలకు వాటర్‌ప్రూఫింగ్ పని.</p></article>
+      <article class="card"><div class="icon">💧</div><h3>వాటర్ ట్యాంక్</h3><p>వాటర్ ట్యాంక్ చుట్టూ నీటి చొరబాటు మరియు లీకేజీ నివారణ పనులు.</p></article>
+    </div>
 
-<div class="card">
-<h3>బాత్రూమ్ వాటర్ ప్రూఫింగ్</h3>
-<p>గోడలు మరియు ఫ్లోర్ లీకేజీల నివారణ.</p>
-</div>
-
-<div class="card">
-<h3>వాటర్ ట్యాంక్ వాటర్ ప్రూఫింగ్</h3>
-<p>ఓవర్ హెడ్ మరియు అండర్ గ్రౌండ్ ట్యాంకులకు ప్రత్యేక సేవలు.</p>
-</div>
-
-<div class="card">
-<h3>బిల్డింగ్ కన్స్ట్రక్షన్</h3>
-<p>ఇంటి నిర్మాణం మరియు రిపేర్ పనులు.</p>
-</div>
-
-</div>
+    <div class="ribbon">
+      <strong>🌧️ వానలు కురుస్తున్నాయి... జాగ్రత్త!</strong>
+      <p>మీ స్లాబ్‌ను మీరే కాపాడుకోండి. లీకేజీల నుంచి రక్షణ కోసం <b>శ్రీ రాజరాజేశ్వరి వాటర్ ప్రూఫ్ వర్క్</b> వారితో మీ స్లాబ్‌కు రక్షణ పూత వేయించుకోండి.</p>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>మా పనుల ఫోటోలు</h2>
-
-<div class="gallery">
-
-<img src="photo1.jpg" alt="Terrace Waterproofing">
-
-<img src="photo2.jpg" alt="Waterproofing Work">
-
-</div>
-
+<section class="section alt" id="process">
+  <div class="container">
+    <div class="kicker">HOW WE WORK</div>
+    <h2 class="title">పని చేసే విధానం</h2>
+    <p class="lead">సమస్యను అర్థం చేసుకుని, అవసరమైన పనిని స్పష్టంగా వివరించి, సరైన పరిష్కారంతో పని పూర్తి చేయడమే మా విధానం.</p>
+    <div class="process">
+      <div class="step"><div class="num">01</div><h3>సైట్ పరిశీలన</h3><p>లీకేజీ ఉన్న ప్రాంతాన్ని పరిశీలిస్తాం.</p></div>
+      <div class="step"><div class="num">02</div><h3>సమస్య గుర్తింపు</h3><p>నీరు ఎక్కడి నుంచి వస్తుందో గుర్తిస్తాం.</p></div>
+      <div class="step"><div class="num">03</div><h3>వాటర్‌ప్రూఫింగ్</h3><p>అవసరమైన రక్షణ పూత మరియు మరమ్మతులు చేస్తాం.</p></div>
+      <div class="step"><div class="num">04</div><h3>ఫైనల్ చెకింగ్</h3><p>పని పూర్తి చేసిన తర్వాత ప్రాంతాన్ని పరిశీలిస్తాం.</p></div>
+    </div>
+  </div>
 </section>
 
-<section class="contact">
-<h2>సంప్రదించండి</h2>
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="kicker">WATERPROOFING SOLUTIONS</div>
+    <h2 class="title">నీటి సమస్యకు సరైన రక్షణ</h2>
+    <div class="gallery">
+      <div class="photo big"><span>🏠 స్లాబ్ & టెర్రస్ వాటర్‌ప్రూఫింగ్<br><small>వర్షపు నీటి చొరబాటుకు రక్షణ</small></span></div>
+      <div class="photo"><span>💧 లీకేజీ రిపేర్<br><small>లీకేజీ ప్రాంతాల పరిష్కారం</small></span></div>
+      <div class="photo"><span>🚿 బాత్రూమ్ సీలింగ్<br><small>తేమ సమస్యలకు రక్షణ</small></span></div>
+    </div>
+  </div>
+</section>
 
-<a class="btn" href="tel:+916303155579">కాల్ చేయండి</a>
+<section class="section alt" id="about">
+  <div class="container aboutBox">
+    <div class="aboutMain">
+      <div class="kicker" style="color:#ffe02f">WHY WATERPROOFING?</div>
+      <h3>ఇల్లు మీది... రక్షణ బాధ్యత కూడా మీది! ❤️</h3>
+      <p>వర్షపు నీరు స్లాబ్‌లోకి చొరబడితే కాలక్రమంలో తేమ, పెయింట్ ఊడిపోవడం, గోడలపై మరకలు మరియు ఇతర నిర్మాణ సమస్యలు రావచ్చు. సమస్య పెరగకముందే వాటర్‌ప్రూఫింగ్ గురించి ఆలోచించండి.</p>
+      <div class="checks">
+        <div class="check"><b>✓</b><span>స్లాబ్ లీకేజీ నివారణకు పరిష్కారాలు</span></div>
+        <div class="check"><b>✓</b><span>టెర్రస్ మరియు వాటర్ ట్యాంక్ రక్షణ</span></div>
+        <div class="check"><b>✓</b><span>బాత్రూమ్ తేమ మరియు నీటి చొరబాటు నివారణ</span></div>
+        <div class="check"><b>✓</b><span>పని వివరాల కోసం నేరుగా సంప్రదించండి</span></div>
+      </div>
+    </div>
+    <div class="aboutSide">
+      <div class="mini"><span>📍</span><strong>విశాఖపట్నం</strong><p>స్థానిక వాటర్‌ప్రూఫింగ్ సేవల కోసం సంప్రదించండి.</p></div>
+      <div class="mini"><span>📞</span><strong>7382466632</strong><p>కాల్ చేసి మీ పని గురించి వివరాలు తెలుసుకోండి.</p></div>
+      <div class="mini"><span>💬</span><strong>WhatsApp</strong><p>ఫోటో పంపి లీకేజీ సమస్య గురించి అడగవచ్చు.</p></div>
+    </div>
+  </div>
+</section>
 
-<a class="btn whatsapp"
-href="https://wa.me/916303155579">
-WhatsApp
-</a>
-
+<section class="contact" id="contact">
+  <div class="container contactGrid">
+    <div>
+      <div class="kicker" style="color:#ffe02f">CONTACT US</div>
+      <h2 class="title" style="color:#fff">లీకేజీకి చెక్ పెట్టే సమయం ఇదే!</h2>
+      <p style="color:#dceeff;line-height:1.8">వర్షాలు మొదలయ్యే ముందు లేదా లీకేజీ కనిపించిన వెంటనే సంప్రదించండి.</p>
+      <a class="phone" href="tel:7382466632">📞 7382466632</a>
+    </div>
+    <div class="contactCard">
+      <h3>శ్రీ రాజరాజేశ్వరి వాటర్ ప్రూఫ్ వర్క్</h3>
+      <p>స్లాబ్ • టెర్రస్ • బాత్రూమ్ • వాటర్ ట్యాంక్ • లీకేజీ రక్షణ</p>
+      <div class="actionRow">
+        <a class="btn call" href="tel:7382466632">📞 కాల్ చేయండి</a>
+        <a class="btn whatsapp" href="https://wa.me/917382466632?text=నాకు%20వాటర్‌ప్రూఫింగ్%20పని%20కావాలి" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
-© 2025 శ్రీ రాజరాజేశ్వరి బిల్డింగ్ కన్స్ట్రక్షన్ & వాటర్ ప్రూఫింగ్ వర్క్స్
+  <div class="container">
+    © <span id="year"></span> శ్రీ రాజరాజేశ్వరి వాటర్ ప్రూఫ్ వర్క్ • Visakhapatnam
+  </div>
 </footer>
 
+<a class="float" href="https://wa.me/917382466632?text=నాకు%20వాటర్‌ప్రూఫింగ్%20పని%20కావాలి" target="_blank" aria-label="WhatsApp">💬</a>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
-    </html>
+      </html>
+    
